@@ -1,0 +1,11 @@
+@mixin formatting_h2 {
+  width: fit-content;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@mixin formatting_p {
+  width: fit-content;
+  font-size: 15px;
+  font-weight: normal;
+}

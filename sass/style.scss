@@ -1,1 +1,6 @@
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/parametres-generaux";
+@import "./pages/header";
+@import "./pages/responsive-tablet";
+@import "./pages/responsive-desktop";

@@ -1,0 +1,43 @@
+/* VERSION ORDINATEUR */
+
+@media (min-width: 769px) {
+  /* PAREMETRES GENERAUX */
+
+  /* Main Wrapper*/
+
+  #main-wrapper {
+    width: 1400px;
+  }
+
+  /* Header */
+
+  h1 {
+    font-size: 40px;
+    margin-left: 592px;
+    margin-right: 592px;
+  }
+
+  .localisation {
+    i {
+      margin-left: 592px;
+    }
+    input {
+      margin-right: 602px;
+    }
+  }
+
+  .slogan {
+    h2 {
+      margin-left: 522px;
+      margin-right: 523px;
+    }
+    .principe {
+      margin-left: 477px;
+      margin-right: 478px;
+    }
+    .explorer {
+      margin-left: 597px;
+      margin-right: 598px;
+    }
+  }
+}

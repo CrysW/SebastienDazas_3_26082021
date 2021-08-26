@@ -1,0 +1,43 @@
+/* VERSION TABLETTE */
+
+@media (min-width: 376px) and (max-width: 768px) {
+  /* PAREMETRES GENERAUX */
+
+  /* Main Wrapper*/
+
+  #main-wrapper {
+    width: 768px;
+  }
+
+  /* Header */
+
+  h1 {
+    font-size: 35px;
+    margin-left: 290px;
+    margin-right: 290px;
+  }
+
+  .localisation {
+    i {
+      margin-left: 290px;
+    }
+    input {
+      margin-right: 272px;
+    }
+  }
+
+  .slogan {
+    h2 {
+      margin-left: 206px;
+      margin-right: 207px;
+    }
+    .principe {
+      margin-left: 161px;
+      margin-right: 162px;
+    }
+    .explorer {
+      margin-left: 281px;
+      margin-right: 282px;
+    }
+  }
+}

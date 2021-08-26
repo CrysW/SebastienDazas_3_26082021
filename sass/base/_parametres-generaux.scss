@@ -91,6 +91,13 @@ video {
   vertical-align: baseline;
 }
 
+a {
+  color: #000000;
+  &:link {
+    text-decoration: none;
+  }
+}
+
 /* Réinitialisation du rôle d'affichage HTML5 pour les navigateurs plus anciens */
 
 article,
@@ -127,4 +134,25 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Définition de la police personnalisée */
+
+h1,
+h4 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2,
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Main Wrapper */
+
+#main-wrapper {
+  border: $main-wrapper-border-display $main-wrapper-border-color 1px;
+  width: 375px;
+  margin: auto;
 }

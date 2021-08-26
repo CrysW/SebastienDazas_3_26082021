@@ -90,6 +90,14 @@ video {
   vertical-align: baseline;
 }
 
+a {
+  color: #000000;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 /* Réinitialisation du rôle d'affichage HTML5 pour les navigateurs plus anciens */
 article,
 aside,
@@ -130,5 +138,178 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Définition de la police personnalisée */
+h1,
+h4 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2,
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Main Wrapper */
+#main-wrapper {
+  border: solid #000000 1px;
+  width: 375px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  border: none #007f46 1px;
+}
+
+h1 {
+  border: none #ff0000 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 30px;
+  margin: 20px 100px 10px 100px;
+}
+
+.localisation {
+  border: none #ffb27f 1px;
+  height: 50px;
+  background-color: #eaeaea;
+}
+
+.localisation i {
+  border: none #0094ff 1px;
+  margin: 15px 15px 15px 100px;
+}
+
+.localisation input {
+  border: none #ff006e 1px;
+  background-color: #eaeaea;
+  margin: 15px 70px 15px 0px;
+}
+
+.slogan {
+  border: none #ff7fed 1px;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slogan h2 {
+  border: none #ff6a00 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 80px 15px 60px;
+}
+
+.slogan .principe {
+  border: none #b6ff00 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0px 30px 30px 35px;
+}
+
+.slogan .explorer {
+  border: none #b6ff00 0px;
+  border-radius: 25px 25px 25px 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-box-shadow: 2px 2px 3px #c5c5c5;
+          box-shadow: 2px 2px 3px #c5c5c5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px 85px 55px 85px;
+  padding: 15px 20px 15px 20px;
+}
+
+.explorer:hover {
+  -webkit-box-shadow: 2px 2px 3px #808080;
+          box-shadow: 2px 2px 3px #808080;
+}
+
+/* VERSION TABLETTE */
+@media (min-width: 376px) and (max-width: 768px) {
+  /* PAREMETRES GENERAUX */
+  /* Main Wrapper*/
+  #main-wrapper {
+    width: 768px;
+  }
+  /* Header */
+  h1 {
+    font-size: 35px;
+    margin-left: 290px;
+    margin-right: 290px;
+  }
+  .localisation i {
+    margin-left: 290px;
+  }
+  .localisation input {
+    margin-right: 272px;
+  }
+  .slogan h2 {
+    margin-left: 206px;
+    margin-right: 207px;
+  }
+  .slogan .principe {
+    margin-left: 161px;
+    margin-right: 162px;
+  }
+  .slogan .explorer {
+    margin-left: 281px;
+    margin-right: 282px;
+  }
+}
+
+/* VERSION ORDINATEUR */
+@media (min-width: 769px) {
+  /* PAREMETRES GENERAUX */
+  /* Main Wrapper*/
+  #main-wrapper {
+    width: 1400px;
+  }
+  /* Header */
+  h1 {
+    font-size: 40px;
+    margin-left: 592px;
+    margin-right: 592px;
+  }
+  .localisation i {
+    margin-left: 592px;
+  }
+  .localisation input {
+    margin-right: 602px;
+  }
+  .slogan h2 {
+    margin-left: 522px;
+    margin-right: 523px;
+  }
+  .slogan .principe {
+    margin-left: 477px;
+    margin-right: 478px;
+  }
+  .slogan .explorer {
+    margin-left: 597px;
+    margin-right: 598px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

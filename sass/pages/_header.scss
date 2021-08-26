@@ -1,0 +1,61 @@
+/* Header */
+
+header {
+  border: $border-display $header-border-color 1px;
+}
+
+h1 {
+  border: $border-display $header-h1-border-color 1px;
+  width: fit-content;
+  font-size: 30px;
+  margin: 20px 100px 10px 100px;
+}
+
+.localisation {
+  border: $border-display $header-localisation-border-color 1px;
+  height: 50px;
+  background-color: $header-localisation-background-color;
+  i {
+    border: $border-display $header-i-border-color 1px;
+    margin: 15px 15px 15px 100px;
+  }
+  input {
+    border: $border-display $header-input-border-color 1px;
+    background-color: $header-input-background-color;
+    margin: 15px 70px 15px 0px;
+  }
+}
+
+.slogan {
+  border: $border-display $header-slogan-border-color 1px;
+  background-color: $header-slogan-background-color;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    border: $border-display $header-h2-border-color 1px;
+    @include formatting_h2;
+    text-align: center;
+    margin: 40px 80px 15px 60px;
+  }
+  .principe {
+    border: $border-display $header-principe-border-color 1px;
+    @include formatting_p;
+    text-align: center;
+    margin: 0px 30px 30px 35px;
+  }
+  .explorer {
+    border: $border-display $header-explorer-border-color 0px;
+    border-radius: 25px 25px 25px 25px;
+    background: $header-explorer-background-color;
+    box-shadow: 2px 2px 3px #c5c5c5;
+    @include formatting_p;
+    color: $header-explorer-text-color;
+    text-align: center;
+    margin: 0px 85px 55px 85px;
+    padding: 15px 20px 15px 20px;
+  }
+}
+
+.explorer:hover {
+  box-shadow: 2px 2px 3px #808080;
+}

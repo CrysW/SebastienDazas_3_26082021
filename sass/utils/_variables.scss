@@ -1,0 +1,34 @@
+// AFFICHAGE OU NON DES BORDURES
+
+$main-wrapper-border-display: solid;
+$border-display: none;
+
+// LISTING DES COULEURS DES BORDURES
+
+$main-wrapper-border-color: #000000;
+
+// Zone Header - Page d'accueil
+
+$header-border-color: #007f46;
+$header-h1-border-color: #ff0000;
+
+$header-localisation-border-color: #ffb27f;
+$header-i-border-color: #0094ff;
+$header-input-border-color: #ff006e;
+
+$header-slogan-border-color: #ff7fed;
+$header-h2-border-color: #ff6a00;
+$header-principe-border-color: #b6ff00;
+$header-explorer-border-color: #b6ff00;
+
+// LISTING DES COULEURS DES BACKGROUNDS
+
+// Zone Header - Page d'accueil
+$header-localisation-background-color: #eaeaea;
+$header-input-background-color: #eaeaea;
+
+$header-slogan-background-color: #f6f6f6;
+$header-explorer-background-color: linear-gradient(#ff79da, #9356dc);
+
+// LISTING DES COULEURS DES TEXTES & AUTRES
+$header-explorer-text-color: #ffffff;
