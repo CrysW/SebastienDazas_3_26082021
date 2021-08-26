@@ -1,6 +1,7 @@
-@charset "UTF-8";
 /* PARAMETRES GENERAUX */
+
 /* Reset CSS */
+
 html,
 body,
 div,
@@ -91,6 +92,7 @@ video {
 }
 
 /* Réinitialisation du rôle d'affichage HTML5 pour les navigateurs plus anciens */
+
 article,
 aside,
 details,
@@ -104,21 +106,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -126,9 +124,7 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*# sourceMappingURL=style.css.map */
