@@ -36,8 +36,8 @@
       margin-right: 478px;
     }
     .explorer {
-      margin-left: 597px;
-      margin-right: 598px;
+      margin-left: 595px;
+      margin-right: 595px;
     }
   }
 
@@ -55,5 +55,37 @@
     justify-content: space-between;
     margin-right: 50px;
     margin-left: 50px;
+  }
+
+  /* Section - Restaurant */
+
+  .restaurant {
+    h2 {
+      margin-bottom: 15px;
+      margin-left: 50px;
+      margin-right: 1239px;
+    }
+  }
+
+  .choix-restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+  }
+
+  .information-restaurant {
+    width: 625px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .nouveau {
+      margin-left: 535px;
+    }
+    img {
+      width: 625px;
+      height: 332px;
+    }
   }
 }

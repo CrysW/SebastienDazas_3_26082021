@@ -36,8 +36,8 @@
       margin-right: 162px;
     }
     .explorer {
-      margin-left: 281px;
-      margin-right: 282px;
+      margin-left: 279px;
+      margin-right: 279px;
     }
   }
 
@@ -58,5 +58,27 @@
   .processus {
     margin-right: 158px;
     margin-left: 158px;
+  }
+
+  /* Section - Restaurant */
+
+  .restaurant {
+    h2 {
+      margin-left: 50px;
+      margin-right: 608px;
+    }
+  }
+
+  .information-restaurant {
+    width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
+    .nouveau {
+      margin-left: 579px;
+    }
+    img {
+      width: 668px;
+      height: 350px;
+    }
   }
 }

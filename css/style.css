@@ -98,6 +98,11 @@ a:link {
   text-decoration: none;
 }
 
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* Réinitialisation du rôle d'affichage HTML5 pour les navigateurs plus anciens */
 article,
 aside,
@@ -374,6 +379,130 @@ main {
   color: #9356dc;
 }
 
+/* Section - Restaurant */
+.restaurant {
+  border: none #7fc9ff 1px;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurant h2 {
+  border: none #ff6a00 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 55px 245px 5px 20px;
+}
+
+.choix-restaurant {
+  border: none #00ff90 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.information-restaurant {
+  border: none #4800ff 1px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 330px;
+  margin: 20px 20px 0px 20px;
+  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
+          box-shadow: 3px 3px 5px #c5c5c5;
+}
+
+.information-restaurant:hover {
+  -webkit-box-shadow: 3px 3px 2px #808080;
+          box-shadow: 3px 3px 2px #808080;
+}
+
+.information-restaurant .nouveau {
+  border: solid #99e2d0 1px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #99e2d0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #008766;
+  padding: 10px 15px 10px 15px;
+  position: absolute;
+  z-index: 2;
+  margin: 10px 0px 0px 240px;
+}
+
+.information-restaurant img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 330px;
+  height: 175px;
+}
+
+.information-restaurant .information {
+  border: none #5b7f00 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px 0px 15px 0px;
+}
+
+.information-restaurant .information i {
+  border: none #0094ff 1px;
+  margin: 5px 20px 0px 0px;
+}
+
+.information-restaurant .nom-restaurant {
+  border: none #7f0000 1px;
+  margin: 0px 0px 0px 10px;
+}
+
+.information-restaurant .nom-restaurant h3 {
+  border: none #ffd800 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 5px 0px;
+}
+
+.information-restaurant .nom-restaurant .quartier {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
 /* VERSION TABLETTE */
 @media (min-width: 376px) and (max-width: 768px) {
   /* PAREMETRES GENERAUX */
@@ -402,8 +531,8 @@ main {
     margin-right: 162px;
   }
   .slogan .explorer {
-    margin-left: 281px;
-    margin-right: 282px;
+    margin-left: 279px;
+    margin-right: 279px;
   }
   /* Section - Fonctionnement */
   .fonctionnement h2 {
@@ -417,6 +546,23 @@ main {
   .processus {
     margin-right: 158px;
     margin-left: 158px;
+  }
+  /* Section - Restaurant */
+  .restaurant h2 {
+    margin-left: 50px;
+    margin-right: 608px;
+  }
+  .information-restaurant {
+    width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .information-restaurant .nouveau {
+    margin-left: 579px;
+  }
+  .information-restaurant img {
+    width: 668px;
+    height: 350px;
   }
 }
 
@@ -448,8 +594,8 @@ main {
     margin-right: 478px;
   }
   .slogan .explorer {
-    margin-left: 597px;
-    margin-right: 598px;
+    margin-left: 595px;
+    margin-right: 595px;
   }
   /* Section - Fonctionnement */
   .fonctionnement h2 {
@@ -466,6 +612,38 @@ main {
             justify-content: space-between;
     margin-right: 50px;
     margin-left: 50px;
+  }
+  /* Section - Restaurant */
+  .restaurant h2 {
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 1239px;
+  }
+  .choix-restaurant {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 60px;
+  }
+  .information-restaurant {
+    width: 625px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .information-restaurant .nouveau {
+    margin-left: 535px;
+  }
+  .information-restaurant img {
+    width: 625px;
+    height: 332px;
   }
 }
 /*# sourceMappingURL=style.css.map */

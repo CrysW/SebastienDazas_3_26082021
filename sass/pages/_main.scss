@@ -32,3 +32,28 @@ main {
   @include vignette-etape;
   margin: 25px 0px 25px 0px;
 }
+
+/* Section - Restaurant */
+
+.restaurant {
+  border: $border-display $section-restaurant-border-color 1px;
+  background-color: $section-restaurant-background-color;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    border: $border-display $section-h2-border-color 1px;
+    @include formatting_h2;
+    margin: 55px 245px 5px 20px;
+  }
+}
+
+.choix-restaurant {
+  border: $border-display $section-choix-restaurant-border-color 1px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.information-restaurant {
+  @include vignette-restaurant;
+}

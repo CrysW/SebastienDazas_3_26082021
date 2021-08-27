@@ -98,6 +98,10 @@ a {
   }
 }
 
+.cover {
+  object-fit: cover;
+}
+
 /* Réinitialisation du rôle d'affichage HTML5 pour les navigateurs plus anciens */
 
 article,

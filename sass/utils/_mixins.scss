@@ -67,3 +67,61 @@
     }
   }
 }
+
+@mixin vignette-restaurant {
+  border: $border-display $section-vignette-border-color 1px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: $section-information-restaurant-background-color;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin: 20px 20px 0px 20px;
+  @include ombre;
+  &:hover {
+    box-shadow: 3px 3px 2px #808080;
+  }
+  .nouveau {
+    border: solid #99e2d0 1px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #99e2d0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #008766;
+    padding: 10px 15px 10px 15px;
+    position: absolute;
+    z-index: 2;
+    margin: 10px 0px 0px 240px;
+  }
+  img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 330px;
+    height: 175px;
+  }
+
+  .information {
+    border: $border-display $section-information-border-color 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0px 15px 0px;
+    i {
+      border: $border-display $section-i-border-color 1px;
+      margin: 5px 20px 0px 0px;
+    }
+  }
+
+  .nom-restaurant {
+    border: $border-display $section-nom-restaurant-border-color 1px;
+    margin: 0px 0px 0px 10px;
+    h3 {
+      border: $border-display $section-h3-border-color 1px;
+      @include formatting_h3;
+      margin: 0px 0px 5px 0px;
+    }
+    .quartier {
+      border: $border-display $section-quartier-border-color 1px;
+      @include formatting_p;
+    }
+  }
+}
