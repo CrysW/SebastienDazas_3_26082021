@@ -19,7 +19,7 @@
 
   .localisation {
     i {
-      margin-left: 592px;
+      margin-left: 586px;
     }
     input {
       margin-right: 602px;
@@ -39,5 +39,21 @@
       margin-left: 597px;
       margin-right: 598px;
     }
+  }
+
+  /* Section - Fonctionnement */
+
+  .fonctionnement {
+    h2 {
+      margin-left: 50px;
+      margin-right: 1185px;
+    }
+  }
+
+  .information-fonctionnement {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }

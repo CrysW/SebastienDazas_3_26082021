@@ -4,8 +4,66 @@
   font-weight: bold;
 }
 
-@mixin formatting_p {
+@mixin formatting_h3 {
   width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+@mixin formatting_p {
   font-size: 15px;
   font-weight: normal;
+}
+
+@mixin ombre {
+  box-shadow: 3px 3px 5px #c5c5c5;
+}
+
+@mixin vignette-etape {
+  .numero {
+    border: $border-display $section-numero-border-color 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px 25px 25px 25px;
+    @include formatting_p;
+    background-color: $section-numero-background-color;
+    color: $section-numero-text-color;
+    position: relative;
+    left: 15px;
+  }
+  .phase {
+    border: $border-display $section-phase-border-color 1px;
+    display: flex;
+    flex-direction: row;
+    width: 325px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: $section-phase-background-color;
+    @include ombre;
+    i {
+      border: $border-display $section-i-border-color 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      color: $section-i-fonctionnement-color;
+      margin: 25px 25px 20px 30px;
+    }
+    h3 {
+      border: $border-display $section-h3-border-color 1px;
+      @include formatting_h3;
+      margin: 25px 0px 20px 0px;
+    }
+  }
+  .phase:hover {
+    background-color: $section-hover-phase-background-color;
+    i {
+      color: $section-hover-i-fonctionnement-color;
+    }
+  }
 }

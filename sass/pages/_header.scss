@@ -17,7 +17,7 @@ h1 {
   background-color: $header-localisation-background-color;
   i {
     border: $border-display $header-i-border-color 1px;
-    margin: 15px 15px 15px 100px;
+    margin: 15px 15px 15px 93px;
   }
   input {
     border: $border-display $header-input-border-color 1px;
@@ -47,11 +47,11 @@ h1 {
     border: $border-display $header-explorer-border-color 0px;
     border-radius: 25px 25px 25px 25px;
     background: $header-explorer-background-color;
-    box-shadow: 2px 2px 3px #c5c5c5;
+    @include ombre;
     @include formatting_p;
     color: $header-explorer-text-color;
     text-align: center;
-    margin: 0px 85px 55px 85px;
+    margin: 0px 83px 55px 83px;
     padding: 15px 20px 15px 20px;
   }
 }

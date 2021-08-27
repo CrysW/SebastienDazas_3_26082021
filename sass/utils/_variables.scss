@@ -21,6 +21,21 @@ $header-h2-border-color: #ff6a00;
 $header-principe-border-color: #b6ff00;
 $header-explorer-border-color: #b6ff00;
 
+// Zone Main - Page d'accueil
+
+$main-border-color: #a0a0a0;
+
+// Zone Section - Fonctionnement
+
+$section-fonctionnement-border-color: #00ff21;
+$section-h2-border-color: #ff6a00;
+$section-information-fonctionnement-border-color: #7fffc5;
+$section-processus-border-color: #0026ff;
+$section-numero-border-color: #9356dc;
+$section-phase-border-color: #000000;
+$section-i-border-color: #0094ff;
+$section-h3-border-color: #ffd800;
+
 // LISTING DES COULEURS DES BACKGROUNDS
 
 // Zone Header - Page d'accueil
@@ -30,5 +45,17 @@ $header-input-background-color: #eaeaea;
 $header-slogan-background-color: #f6f6f6;
 $header-explorer-background-color: linear-gradient(#ff79da, #9356dc);
 
+// Zone Section - Fonctionnement
+$section-numero-background-color: #9356dc;
+$section-phase-background-color: #f6f6f6;
+$section-hover-phase-background-color: #f5edff;
+
 // LISTING DES COULEURS DES TEXTES & AUTRES
+
+// Zone Header
 $header-explorer-text-color: #ffffff;
+
+// Zone Section - Fonctionnement
+$section-numero-text-color: #ffffff;
+$section-i-fonctionnement-color: #7e7e7e;
+$section-hover-i-fonctionnement-color: #9356dc;

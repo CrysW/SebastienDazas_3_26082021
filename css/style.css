@@ -181,7 +181,7 @@ h1 {
 
 .localisation i {
   border: none #0094ff 1px;
-  margin: 15px 15px 15px 100px;
+  margin: 15px 15px 15px 93px;
 }
 
 .localisation input {
@@ -215,9 +215,6 @@ h1 {
 
 .slogan .principe {
   border: none #b6ff00 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 15px;
   font-weight: normal;
   text-align: center;
@@ -229,22 +226,152 @@ h1 {
   border-radius: 25px 25px 25px 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
-  -webkit-box-shadow: 2px 2px 3px #c5c5c5;
-          box-shadow: 2px 2px 3px #c5c5c5;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
+          box-shadow: 3px 3px 5px #c5c5c5;
   font-size: 15px;
   font-weight: normal;
   color: #ffffff;
   text-align: center;
-  margin: 0px 85px 55px 85px;
+  margin: 0px 83px 55px 83px;
   padding: 15px 20px 15px 20px;
 }
 
 .explorer:hover {
   -webkit-box-shadow: 2px 2px 3px #808080;
           box-shadow: 2px 2px 3px #808080;
+}
+
+/* Main */
+main {
+  border: none #a0a0a0 1px;
+}
+
+/* Section - Fonctionnement */
+.fonctionnement {
+  border: none #00ff21 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.fonctionnement h2 {
+  border: none #ff6a00 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 50px 188px 5px 20px;
+}
+
+.information-fonctionnement {
+  border: none #7fffc5 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.processus {
+  border: none #0026ff 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0px 25px 0px;
+}
+
+.processus .numero {
+  border: none #9356dc 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 15px;
+  font-weight: normal;
+  background-color: #9356dc;
+  color: #ffffff;
+  position: relative;
+  left: 15px;
+}
+
+.processus .phase {
+  border: none #000000 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 325px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
+          box-shadow: 3px 3px 5px #c5c5c5;
+}
+
+.processus .phase i {
+  border: none #0094ff 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  color: #7e7e7e;
+  margin: 25px 25px 20px 30px;
+}
+
+.processus .phase h3 {
+  border: none #ffd800 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0px 20px 0px;
+}
+
+.processus .phase:hover {
+  background-color: #f5edff;
+}
+
+.processus .phase:hover i {
+  color: #9356dc;
 }
 
 /* VERSION TABLETTE */
@@ -261,7 +388,7 @@ h1 {
     margin-right: 290px;
   }
   .localisation i {
-    margin-left: 290px;
+    margin-left: 284px;
   }
   .localisation input {
     margin-right: 272px;
@@ -277,6 +404,19 @@ h1 {
   .slogan .explorer {
     margin-left: 281px;
     margin-right: 282px;
+  }
+  /* Section - Fonctionnement */
+  .fonctionnement h2 {
+    margin-left: 50px;
+    margin-right: 555px;
+  }
+  .information-fonctionnement {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .processus {
+    margin-right: 158px;
+    margin-left: 158px;
   }
 }
 
@@ -294,7 +434,7 @@ h1 {
     margin-right: 592px;
   }
   .localisation i {
-    margin-left: 592px;
+    margin-left: 586px;
   }
   .localisation input {
     margin-right: 602px;
@@ -310,6 +450,22 @@ h1 {
   .slogan .explorer {
     margin-left: 597px;
     margin-right: 598px;
+  }
+  /* Section - Fonctionnement */
+  .fonctionnement h2 {
+    margin-left: 50px;
+    margin-right: 1185px;
+  }
+  .information-fonctionnement {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
