@@ -6,13 +6,14 @@ header {
 
 h1 {
   border: $border-display $header-h1-border-color 1px;
-  width: fit-content;
   font-size: 30px;
   margin: 20px 100px 10px 100px;
 }
 
 .localisation {
   border: $border-display $header-localisation-border-color 1px;
+  display: flex;
+  flex-direction: row;
   height: 50px;
   background-color: $header-localisation-background-color;
   i {
@@ -22,7 +23,8 @@ h1 {
   input {
     border: $border-display $header-input-border-color 1px;
     background-color: $header-input-background-color;
-    margin: 15px 70px 15px 0px;
+    width: 165px;
+    margin: 15px 86px 15px 0px;
   }
 }
 
@@ -41,7 +43,7 @@ h1 {
     border: $border-display $header-principe-border-color 1px;
     @include formatting_p;
     text-align: center;
-    margin: 0px 30px 30px 35px;
+    margin: 0px 29px 30px 35px;
   }
   .explorer {
     border: $border-display $header-explorer-border-color 0px;
@@ -51,7 +53,7 @@ h1 {
     @include formatting_p;
     color: $header-explorer-text-color;
     text-align: center;
-    margin: 0px 83px 55px 83px;
+    margin: 0px 83px 55px 82px;
     padding: 15px 20px 15px 20px;
   }
 }

@@ -1,6 +1,6 @@
 // AFFICHAGE OU NON DES BORDURES
 
-$main-wrapper-border-display: solid;
+$main-wrapper-border-display: none;
 $border-display: none;
 
 // LISTING DES COULEURS DES BORDURES
@@ -45,6 +45,13 @@ $section-information-border-color: #5b7f00;
 $section-nom-restaurant-border-color: #7f0000;
 $section-quartier-border-color: #b6ff00;
 
+// Zone Footer
+$footer-border-color: #00ffff;
+$footer-h4-border-color: #c0c0c0;
+$footer-p-border-color: #b6ff00;
+$footer-prestation-border-color: #7f6a00;
+$footer-i-border-color: #0094ff;
+
 // LISTING DES COULEURS DES BACKGROUNDS
 
 // Zone Header - Page d'accueil
@@ -63,6 +70,9 @@ $section-hover-phase-background-color: #f5edff;
 $section-restaurant-background-color: #f6f6f6;
 $section-information-restaurant-background-color: #ffffff;
 
+// Zone Footer
+$footer-background-color: #353535;
+
 // LISTING DES COULEURS DES TEXTES & AUTRES
 
 // Zone Header
@@ -72,3 +82,8 @@ $header-explorer-text-color: #ffffff;
 $section-numero-text-color: #ffffff;
 $section-i-fonctionnement-color: #7e7e7e;
 $section-hover-i-fonctionnement-color: #9356dc;
+
+// Zone Footer
+$footer-i-color: #ffffff;
+$footer-h4-color: #ffffff;
+$footer-p-color: #ffffff;

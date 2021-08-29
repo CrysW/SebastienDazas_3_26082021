@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+@mixin formatting_h4 {
+  width: fit-content;
+  font-size: 16px;
+}
+
 @mixin formatting_p {
   font-size: 15px;
   font-weight: normal;
@@ -74,7 +79,7 @@
   background-color: $section-information-restaurant-background-color;
   display: flex;
   flex-direction: column;
-  width: 330px;
+  width: 335px;
   margin: 20px 20px 0px 20px;
   @include ombre;
   &:hover {
@@ -95,10 +100,9 @@
   img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 330px;
+    width: 335px;
     height: 175px;
   }
-
   .information {
     border: $border-display $section-information-border-color 1px;
     display: flex;
@@ -110,7 +114,6 @@
       margin: 5px 20px 0px 0px;
     }
   }
-
   .nom-restaurant {
     border: $border-display $section-nom-restaurant-border-color 1px;
     margin: 0px 0px 0px 10px;
@@ -122,6 +125,52 @@
     .quartier {
       border: $border-display $section-quartier-border-color 1px;
       @include formatting_p;
+    }
+  }
+}
+
+@mixin pied-de-page {
+  border: $border-display $footer-border-color 1px;
+  background-color: $footer-background-color;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    border: $border-display $footer-h4-border-color 1px;
+    @include formatting_h4;
+    color: $footer-h4-color;
+    margin: 25px 263px 20px 25px;
+  }
+  p {
+    border: $border-display $footer-p-border-color 1px;
+    @include formatting_p;
+    color: $footer-p-color;
+  }
+  .notion-juridique {
+    border: $border-display $footer-p-border-color 1px;
+    @include formatting_p;
+    color: $footer-p-color;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  .contacter {
+    border: $border-display $footer-p-border-color 1px;
+    @include formatting_p;
+    color: $footer-p-color;
+    margin-left: 25px;
+    margin-bottom: 35px;
+  }
+  .prestation {
+    border: $border-display $footer-prestation-border-color 1px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    i {
+      border: $border-display $footer-i-border-color 1px;
+      width: 20px;
+      height: 20px;
+      color: $footer-i-color;
+      margin-right: 10px;
     }
   }
 }

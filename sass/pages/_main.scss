@@ -10,11 +10,11 @@ main {
   border: $border-display $section-fonctionnement-border-color 1px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 65px;
   h2 {
     border: $border-display $section-h2-border-color 1px;
     @include formatting_h2;
-    margin: 50px 188px 5px 20px;
+    margin: 50px 194px 5px 20px;
   }
 }
 
@@ -30,7 +30,7 @@ main {
   flex-direction: row;
   align-items: center;
   @include vignette-etape;
-  margin: 25px 0px 25px 0px;
+  margin: 25px 0px 0px 0px;
 }
 
 /* Section - Restaurant */
@@ -43,7 +43,7 @@ main {
   h2 {
     border: $border-display $section-h2-border-color 1px;
     @include formatting_h2;
-    margin: 55px 245px 5px 20px;
+    margin: 55px 246px 5px 20px;
   }
 }
 
