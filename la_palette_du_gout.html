@@ -27,5 +27,32 @@
     ></script>
     <title>La palette du goût</title>
   </head>
-  <body></body>
+  <body id="main-wrapper">
+    <!-- Structure du header -->
+    <header class="header-menu">
+      <div class="bandeau-menu">
+        <a href="index.html"><i class="fas fa-arrow-left fa lg"></i></a>
+        <h1 class="appellation">ohmyfood</h1>
+      </div>
+      <picture>
+        <source
+          media="(width: 375px)"
+          srcset="ressources/images/la_palette_du_gout/mobile.jpg"
+        />
+        <source
+          media="(min-width: 376px) and (max-width: 768px) "
+          srcset="ressources/images/la_palette_du_gout/tablet.jpg"
+        />
+        <source
+          media="(min-width: 769px) "
+          srcset="ressources/images/la_palette_du_gout/desktop.jpg"
+        />
+        <img
+          src="ressources/images/la_palette_du_gout/la_palette_du_gout.jpg"
+          alt="la_palette_du_gout"
+          class="cover"
+        />
+      </picture>
+    </header>
+  </body>
 </html>
