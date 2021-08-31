@@ -201,3 +201,70 @@
     }
   }
 }
+
+@mixin titre-plat {
+  display: flex;
+  flex-direction: column;
+  .alimentation {
+    border: $border-display $section-alimentation-border-color 1px;
+    @include formatting_p;
+    margin: 0px 0px 5px 15px;
+  }
+  .trait {
+    border: $border-display $section-trait-border-color 1px;
+    background-color: $section-trait-background-color;
+    width: 40px;
+    height: 3px;
+    margin: 0px 0px 0px 15px;
+  }
+}
+
+@mixin vignette-plat {
+  border: $border-display $section-entrees-plats-desserts-border-color 1px;
+  margin: 0px 0px 23px 0px;
+  .intitule-plat {
+    border: $border-display $section-intitule-plat-border-color 1px;
+    @include titre-plat;
+    margin: 0px 0px 3px 0px;
+  }
+  .choix-plat {
+    border: $border-display $section-choix-plat-border-color 1px;
+    background-color: $section-choix-plat-background-border-color;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+    .plat {
+      border: $border-display $section-plat-border-color 1px;
+      border-radius: 15px 15px 15px 15px;
+      background-color: $section-plat-background-color;
+      display: flex;
+      flex-direction: column;
+      margin: 7px 0px 7px 0px;
+      @include ombre;
+      &:hover {
+        box-shadow: 3px 3px 2px #808080;
+      }
+      .nom-plat {
+        border: $border-display $section-nom-plat-border-color 1px;
+        @include formatting_h3;
+        margin: 15px 0px 0px 10px;
+      }
+      .information-plat {
+        border: $border-display $section-information-plat-border-color 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 20px 10px 10px;
+        .ingredient {
+          border: $border-display $section-ingredient-border-color 1px;
+          @include formatting_p;
+        }
+        .prix {
+          border: $border-display $section-prix-border-color 1px;
+          @include formatting_p;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

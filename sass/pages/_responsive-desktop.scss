@@ -1,7 +1,7 @@
 /* VERSION ORDINATEUR */
 
 @media (min-width: 769px) {
-  /* PAREMETRES GENERAUX */
+  /* PARAMETRES GENERAUX */
 
   /* Main Wrapper*/
 
@@ -125,6 +125,56 @@
         margin-left: 528px;
         margin-right: 592px;
       }
+    }
+  }
+  /* Main - Menu */
+
+  .carte-menu {
+    width: 1400px;
+  }
+  .denomination-restaurant {
+    .designation {
+      margin-left: 50px;
+    }
+    i {
+      margin-right: 65px;
+    }
+  }
+
+  /* Section - Entrée Plats Desserts */
+
+  .entrees-plats-desserts {
+    margin-bottom: 30px;
+    .intitule-plat {
+      margin-bottom: 10px;
+      .alimentation {
+        margin-left: 50px;
+      }
+      .trait {
+        margin-left: 50px;
+      }
+    }
+    .choix-plat {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 50px;
+      margin-right: 50px;
+      .plat {
+        width: 345px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  /* Section - Commander */
+
+  .commander {
+    .passer-la-commande {
+      margin-top: 45px;
+      margin-left: 600px;
+      margin-right: 600px;
     }
   }
 }

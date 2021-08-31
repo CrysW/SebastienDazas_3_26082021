@@ -5,3 +5,69 @@
 header {
   @include entete-menu;
 }
+
+/* Main */
+
+.carte-menu {
+  border: $border-display $main-carte-menu-border-color 1px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: $main-carte-menu-background-color;
+  width: 375px;
+  position: absolute;
+  z-index: 2;
+  margin: -30px 0px 0px 0px;
+}
+
+/* Section - Dénomination restaurant*/
+
+.denomination-restaurant {
+  border: $border-display $section-denomination-restaurant-border-color 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 35px 0px 30px 0px;
+  .designation {
+    border: $border-display $section-designation-border-color 1px;
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    margin: 0px 0px 0px 20px;
+  }
+  i {
+    border: $border-display $section-denomination-restaurant-i-border-color 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 35px 0px 0px;
+  }
+}
+
+/* Section - Entrée Plats Desserts */
+
+.entrees-plats-desserts {
+  @include vignette-plat;
+}
+
+/* Section - Commander */
+
+.commander {
+  border: $border-display $section-commander-border-color 1px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  .passer-la-commande {
+    border: $border-display $section-passer-la-commande-border-color 0px;
+    border-radius: 25px 25px 25px 25px;
+    background: $section-commander-background-color;
+    @include ombre;
+    @include formatting_p;
+    color: $section-commander-text-color;
+    text-align: center;
+    margin: 15px 95px 60px 95px;
+    padding: 15px 20px 15px 20px;
+  }
+}
+
+.passer-la-commande:hover {
+  box-shadow: 2px 2px 3px #808080;
+}

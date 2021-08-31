@@ -626,9 +626,205 @@ header .bandeau-menu .appellation {
   margin: 20px 106px 10px 73px;
 }
 
+/* Main */
+.carte-menu {
+  border: none #f6f6f6 1px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #f6f6f6;
+  width: 375px;
+  position: absolute;
+  z-index: 2;
+  margin: -30px 0px 0px 0px;
+}
+
+/* Section - Dénomination restaurant*/
+.denomination-restaurant {
+  border: none #7fffc5 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 0px 30px 0px;
+}
+
+.denomination-restaurant .designation {
+  border: none #ff6a00 1px;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  margin: 0px 0px 0px 20px;
+}
+
+.denomination-restaurant i {
+  border: none #0094ff 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 35px 0px 0px;
+}
+
+/* Section - Entrée Plats Desserts */
+.entrees-plats-desserts {
+  border: none #004a7f 1px;
+  margin: 0px 0px 23px 0px;
+}
+
+.entrees-plats-desserts .intitule-plat {
+  border: none #ff00dc 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 0px 3px 0px;
+}
+
+.entrees-plats-desserts .intitule-plat .alimentation {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0px 0px 5px 15px;
+}
+
+.entrees-plats-desserts .intitule-plat .trait {
+  border: none #0094ff 1px;
+  background-color: #99e4d0;
+  width: 40px;
+  height: 3px;
+  margin: 0px 0px 0px 15px;
+}
+
+.entrees-plats-desserts .choix-plat {
+  border: none #3f7f47 1px;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 15px 0px 15px;
+}
+
+.entrees-plats-desserts .choix-plat .plat {
+  border: none #ff006e 1px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7px 0px 7px 0px;
+  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
+          box-shadow: 3px 3px 5px #c5c5c5;
+}
+
+.entrees-plats-desserts .choix-plat .plat:hover {
+  -webkit-box-shadow: 3px 3px 2px #808080;
+          box-shadow: 3px 3px 2px #808080;
+}
+
+.entrees-plats-desserts .choix-plat .plat .nom-plat {
+  border: none #ffd800 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0px 0px 10px;
+}
+
+.entrees-plats-desserts .choix-plat .plat .information-plat {
+  border: none #000000 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 20px 10px 10px;
+}
+
+.entrees-plats-desserts .choix-plat .plat .information-plat .ingredient {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.entrees-plats-desserts .choix-plat .plat .information-plat .prix {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+/* Section - Commander */
+.commander {
+  border: none #8a2be2 1px;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commander .passer-la-commande {
+  border: none #b6ff00 0px;
+  border-radius: 25px 25px 25px 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
+          box-shadow: 3px 3px 5px #c5c5c5;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 15px 95px 60px 95px;
+  padding: 15px 20px 15px 20px;
+}
+
+.passer-la-commande:hover {
+  -webkit-box-shadow: 2px 2px 3px #808080;
+          box-shadow: 2px 2px 3px #808080;
+}
+
 /* VERSION TABLETTE */
 @media (min-width: 376px) and (max-width: 768px) {
-  /* PAREMETRES GENERAUX */
+  /* PARAMETRES GENERAUX */
   /* Main Wrapper*/
   #main-wrapper {
     width: 768px;
@@ -714,11 +910,37 @@ header .bandeau-menu .appellation {
     margin-left: 226px;
     margin-right: 289px;
   }
+  /* Main - Menu */
+  .carte-menu {
+    width: 768px;
+  }
+  .denomination-restaurant .designation {
+    margin-left: 50px;
+  }
+  .denomination-restaurant i {
+    margin-right: 65px;
+  }
+  /* Section - Entrée Plats Desserts */
+  .entrees-plats-desserts .intitule-plat .alimentation {
+    margin-left: 50px;
+  }
+  .entrees-plats-desserts .intitule-plat .trait {
+    margin-left: 50px;
+  }
+  .entrees-plats-desserts .choix-plat {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  /* Section - Commander */
+  .commander .passer-la-commande {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
 }
 
 /* VERSION ORDINATEUR */
 @media (min-width: 769px) {
-  /* PAREMETRES GENERAUX */
+  /* PARAMETRES GENERAUX */
   /* Main Wrapper*/
   #main-wrapper {
     width: 1400px;
@@ -821,6 +1043,53 @@ header .bandeau-menu .appellation {
   .header-menu .bandeau-menu .appellation {
     margin-left: 528px;
     margin-right: 592px;
+  }
+  /* Main - Menu */
+  .carte-menu {
+    width: 1400px;
+  }
+  .denomination-restaurant .designation {
+    margin-left: 50px;
+  }
+  .denomination-restaurant i {
+    margin-right: 65px;
+  }
+  /* Section - Entrée Plats Desserts */
+  .entrees-plats-desserts {
+    margin-bottom: 30px;
+  }
+  .entrees-plats-desserts .intitule-plat {
+    margin-bottom: 10px;
+  }
+  .entrees-plats-desserts .intitule-plat .alimentation {
+    margin-left: 50px;
+  }
+  .entrees-plats-desserts .intitule-plat .trait {
+    margin-left: 50px;
+  }
+  .entrees-plats-desserts .choix-plat {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .entrees-plats-desserts .choix-plat .plat {
+    width: 345px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* Section - Commander */
+  .commander .passer-la-commande {
+    margin-top: 45px;
+    margin-left: 600px;
+    margin-right: 600px;
   }
 }
 /*# sourceMappingURL=style.css.map */

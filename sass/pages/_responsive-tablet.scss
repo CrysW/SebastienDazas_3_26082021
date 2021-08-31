@@ -1,7 +1,7 @@
 /* VERSION TABLETTE */
 
 @media (min-width: 376px) and (max-width: 768px) {
-  /* PAREMETRES GENERAUX */
+  /* PARAMETRES GENERAUX */
 
   /* Main Wrapper*/
 
@@ -118,6 +118,46 @@
         margin-left: 226px;
         margin-right: 289px;
       }
+    }
+  }
+
+  /* Main - Menu */
+
+  .carte-menu {
+    width: 768px;
+  }
+  .denomination-restaurant {
+    .designation {
+      margin-left: 50px;
+    }
+    i {
+      margin-right: 65px;
+    }
+  }
+
+  /* Section - Entrée Plats Desserts */
+
+  .entrees-plats-desserts {
+    .intitule-plat {
+      .alimentation {
+        margin-left: 50px;
+      }
+      .trait {
+        margin-left: 50px;
+      }
+    }
+    .choix-plat {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  /* Section - Commander */
+
+  .commander {
+    .passer-la-commande {
+      margin-left: 250px;
+      margin-right: 250px;
     }
   }
 }
