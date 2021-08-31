@@ -632,7 +632,7 @@ header .bandeau-menu .appellation {
   border-radius: 30px 30px 0px 0px;
   background-color: #f6f6f6;
   width: 375px;
-  position: absolute;
+  position: relative;
   z-index: 2;
   margin: -30px 0px 0px 0px;
 }
@@ -650,14 +650,14 @@ header .bandeau-menu .appellation {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 35px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .denomination-restaurant .designation {
   border: none #ff6a00 1px;
   font-family: "Shrikhand", cursive;
   font-size: 30px;
-  margin: 0px 0px 0px 20px;
+  margin: 35px 0px 0px 20px;
 }
 
 .denomination-restaurant i {
@@ -675,7 +675,7 @@ header .bandeau-menu .appellation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px 35px 0px 0px;
+  margin: 35px 35px 0px 0px;
 }
 
 /* Section - Entrée Plats Desserts */
@@ -820,6 +820,75 @@ header .bandeau-menu .appellation {
 .passer-la-commande:hover {
   -webkit-box-shadow: 2px 2px 3px #808080;
           box-shadow: 2px 2px 3px #808080;
+}
+
+/* Footer */
+.footer-menu {
+  border: none #00ffff 1px;
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-menu h4 {
+  border: none #c0c0c0 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 25px 263px 20px 25px;
+}
+
+.footer-menu p {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.footer-menu .notion-juridique {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-menu .contacter {
+  border: none #b6ff00 1px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-left: 25px;
+  margin-bottom: 35px;
+}
+
+.footer-menu .prestation {
+  border: none #7f6a00 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+.footer-menu .prestation i {
+  border: none #0094ff 1px;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-right: 10px;
 }
 
 /* VERSION TABLETTE */
@@ -1081,9 +1150,7 @@ header .bandeau-menu .appellation {
     margin-right: 50px;
   }
   .entrees-plats-desserts .choix-plat .plat {
-    width: 345px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 380px;
   }
   /* Section - Commander */
   .commander .passer-la-commande {
