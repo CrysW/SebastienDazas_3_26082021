@@ -521,6 +521,17 @@ footer {
           flex-direction: column;
 }
 
+footer .infos {
+  border: none #ff69b4 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 footer h4 {
   border: none #c0c0c0 1px;
   width: -webkit-fit-content;
@@ -835,6 +846,17 @@ header .bandeau-menu .appellation {
           flex-direction: column;
 }
 
+.footer-menu .infos {
+  border: none #ff69b4 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer-menu h4 {
   border: none #c0c0c0 1px;
   width: -webkit-fit-content;
@@ -953,6 +975,15 @@ header .bandeau-menu .appellation {
     height: 350px;
   }
   /* Footer */
+  footer .infos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   footer h4 {
     margin-left: 50px;
     margin-right: 630px;
@@ -965,6 +996,7 @@ header .bandeau-menu .appellation {
   }
   footer .contacter {
     margin-left: 50px;
+    margin-right: 50px;
   }
   /* Menu - Restaurant */
   /* Header - Menu */
@@ -1004,6 +1036,30 @@ header .bandeau-menu .appellation {
   .commander .passer-la-commande {
     margin-left: 250px;
     margin-right: 250px;
+  }
+  /* Footer - Menu */
+  .footer-menu .infos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-menu h4 {
+    margin-left: 50px;
+    margin-right: 630px;
+  }
+  .footer-menu .prestation {
+    margin-left: 50px;
+  }
+  .footer-menu .notion-juridique {
+    margin-left: 50px;
+  }
+  .footer-menu .contacter {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -1087,6 +1143,15 @@ header .bandeau-menu .appellation {
     height: 332px;
   }
   /* Footer */
+  footer .infos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   footer h4 {
     margin-left: 50px;
     margin-right: 1263px;
@@ -1099,6 +1164,7 @@ header .bandeau-menu .appellation {
   }
   footer .contacter {
     margin-left: 50px;
+    margin-right: 50px;
   }
   /* Menu - Restaurant */
   /* Header - Menu */
@@ -1157,6 +1223,30 @@ header .bandeau-menu .appellation {
     margin-top: 45px;
     margin-left: 600px;
     margin-right: 600px;
+  }
+  /* Footer */
+  .footer-menu .infos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-menu h4 {
+    margin-left: 50px;
+    margin-right: 1263px;
+  }
+  .footer-menu .prestation {
+    margin-left: 50px;
+  }
+  .footer-menu .notion-juridique {
+    margin-left: 50px;
+  }
+  .footer-menu .contacter {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

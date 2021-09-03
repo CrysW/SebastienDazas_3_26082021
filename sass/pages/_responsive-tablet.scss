@@ -85,6 +85,10 @@
   /* Footer */
 
   footer {
+    .infos {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     h4 {
       margin-left: 50px;
       margin-right: 630px;
@@ -97,6 +101,7 @@
     }
     .contacter {
       margin-left: 50px;
+      margin-right: 50px;
     }
   }
 
@@ -158,6 +163,29 @@
     .passer-la-commande {
       margin-left: 250px;
       margin-right: 250px;
+    }
+  }
+
+  /* Footer - Menu */
+
+  .footer-menu {
+    .infos {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    h4 {
+      margin-left: 50px;
+      margin-right: 630px;
+    }
+    .prestation {
+      margin-left: 50px;
+    }
+    .notion-juridique {
+      margin-left: 50px;
+    }
+    .contacter {
+      margin-left: 50px;
+      margin-right: 50px;
     }
   }
 }

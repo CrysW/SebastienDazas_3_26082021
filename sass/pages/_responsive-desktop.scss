@@ -92,6 +92,10 @@
   /* Footer */
 
   footer {
+    .infos {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     h4 {
       margin-left: 50px;
       margin-right: 1263px;
@@ -104,6 +108,7 @@
     }
     .contacter {
       margin-left: 50px;
+      margin-right: 50px;
     }
   }
 
@@ -173,6 +178,29 @@
       margin-top: 45px;
       margin-left: 600px;
       margin-right: 600px;
+    }
+  }
+
+  /* Footer */
+
+  .footer-menu {
+    .infos {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    h4 {
+      margin-left: 50px;
+      margin-right: 1263px;
+    }
+    .prestation {
+      margin-left: 50px;
+    }
+    .notion-juridique {
+      margin-left: 50px;
+    }
+    .contacter {
+      margin-left: 50px;
+      margin-right: 50px;
     }
   }
 }

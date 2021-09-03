@@ -134,6 +134,11 @@
   background-color: $footer-background-color;
   display: flex;
   flex-direction: column;
+  .infos {
+    border: $border-display $footer-infos-border-color 1px;
+    display: flex;
+    flex-direction: column;
+  }
   h4 {
     border: $border-display $footer-h4-border-color 1px;
     @include formatting_h4;
