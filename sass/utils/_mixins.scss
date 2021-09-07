@@ -5,11 +5,11 @@
 }
 
 @mixin formatting_h3 {
-  width: fit-content;
   font-size: 16px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @mixin formatting_h4 {
@@ -20,6 +20,9 @@
 @mixin formatting_p {
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @mixin ombre {
@@ -235,6 +238,51 @@
     @include titre-plat;
     margin: 0px 0px 3px 0px;
   }
+  .choix {
+    border: $border-display $section-choix-border-color 0px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: $section-plat-background-color;
+    width: 345px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include ombre;
+    overflow: hidden;
+    margin: 7px 0px 7px 0px;
+    animation-name: chargement-menu;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    &:hover {
+      box-shadow: 3px 3px 2px #808080;
+    }
+  }
+  .choix:active {
+    .carre {
+      transform: translateX(-61px);
+      transition-duration: 0.4s;
+    }
+    .fa-check {
+      animation-name: rotation;
+      animation-duration: 0.4s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+    }
+    .nom-plat {
+      width: 150px;
+      text-overflow: ellipsis;
+    }
+    .ingredient {
+      width: 150px;
+      text-overflow: ellipsis;
+    }
+    .prix {
+      transform: translateX(-61px);
+    }
+  }
   .choix-plat {
     border: $border-display $section-choix-plat-border-color 1px;
     background-color: $section-choix-plat-background-border-color;
@@ -244,20 +292,36 @@
     .plat {
       border: $border-display $section-plat-border-color 1px;
       border-radius: 15px 15px 15px 15px;
-      background-color: $section-plat-background-color;
+      width: 345px;
+      height: 61px;
+      position: relative;
       display: flex;
       flex-direction: column;
-      margin: 7px 0px 7px 0px;
-      @include ombre;
-      animation-name: chargement-menu;
-      animation-duration: 2s;
-      animation-timing-function: linear;
-      animation-delay: 0s;
-      animation-iteration-count: 1;
-
-      &:hover {
-        box-shadow: 3px 3px 2px #808080;
+      .carre {
+        border: solid;
+        border-color: #99e2d0;
+        border-width: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 61px;
+        height: 61px;
+        background-color: #99e2d0;
+        position: absolute;
+        right: -61px;
+        top: 0px;
       }
+
+      .fa-check {
+        border: solid;
+        border-color: #ffffff;
+        border-width: 1px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: #99e2d0;
+        padding: 5px 5px 5px 5px;
+        margin: 16.5px 16.5px 16.5px 16.5px;
+      }
+
       .nom-plat {
         border: $border-display $section-nom-plat-border-color 1px;
         @include formatting_h3;

@@ -131,6 +131,52 @@ body {
   }
 }
 
+/* Animation de l'ajout d'un plat */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* PARAMETRES GENERAUX */
 /* Reset CSS */
 html,
@@ -359,6 +405,9 @@ h1 {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   text-align: center;
   margin: 0px 29px 30px 35px;
 }
@@ -372,6 +421,9 @@ h1 {
           box-shadow: 3px 3px 5px #c5c5c5;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
   text-align: center;
   margin: 0px 83px 55px 82px;
@@ -455,6 +507,9 @@ main {
   border-radius: 25px 25px 25px 25px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   background-color: #9356dc;
   color: #ffffff;
   position: relative;
@@ -496,17 +551,11 @@ main {
 
 .processus .phase h3 {
   border: none #ffd800 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 16px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   margin: 25px 0px 20px 0px;
 }
 
@@ -631,17 +680,11 @@ main {
 
 .information-restaurant .nom-restaurant h3 {
   border: none #ffd800 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 16px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   margin: 0px 0px 5px 0px;
 }
 
@@ -649,6 +692,9 @@ main {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Footer */
@@ -689,6 +735,9 @@ footer p {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
 }
 
@@ -696,6 +745,9 @@ footer .notion-juridique {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
   margin-left: 25px;
   margin-bottom: 10px;
@@ -705,6 +757,9 @@ footer .contacter {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
   margin-left: 25px;
   margin-bottom: 35px;
@@ -854,6 +909,9 @@ header .bandeau-menu .appellation {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   margin: 0px 0px 5px 15px;
 }
 
@@ -863,6 +921,77 @@ header .bandeau-menu .appellation {
   width: 40px;
   height: 3px;
   margin: 0px 0px 0px 15px;
+}
+
+.entrees-plats-desserts .choix {
+  border: none #ff45ab 0px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #ffffff;
+  width: 345px;
+  height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
+          box-shadow: 3px 3px 5px #c5c5c5;
+  overflow: hidden;
+  margin: 7px 0px 7px 0px;
+  -webkit-animation-name: chargement-menu;
+          animation-name: chargement-menu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.entrees-plats-desserts .choix:hover {
+  -webkit-box-shadow: 3px 3px 2px #808080;
+          box-shadow: 3px 3px 2px #808080;
+}
+
+.entrees-plats-desserts .choix:active .carre {
+  -webkit-transform: translateX(-61px);
+          transform: translateX(-61px);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.entrees-plats-desserts .choix:active .fa-check {
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.entrees-plats-desserts .choix:active .nom-plat {
+  width: 150px;
+  text-overflow: ellipsis;
+}
+
+.entrees-plats-desserts .choix:active .ingredient {
+  width: 150px;
+  text-overflow: ellipsis;
+}
+
+.entrees-plats-desserts .choix:active .prix {
+  -webkit-transform: translateX(-61px);
+          transform: translateX(-61px);
 }
 
 .entrees-plats-desserts .choix-plat {
@@ -881,7 +1010,9 @@ header .bandeau-menu .appellation {
 .entrees-plats-desserts .choix-plat .plat {
   border: none #ff006e 1px;
   border-radius: 15px 15px 15px 15px;
-  background-color: #ffffff;
+  width: 345px;
+  height: 61px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -889,39 +1020,40 @@ header .bandeau-menu .appellation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 7px 0px 7px 0px;
-  -webkit-box-shadow: 3px 3px 5px #c5c5c5;
-          box-shadow: 3px 3px 5px #c5c5c5;
-  -webkit-animation-name: chargement-menu;
-          animation-name: chargement-menu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 
-.entrees-plats-desserts .choix-plat .plat:hover {
-  -webkit-box-shadow: 3px 3px 2px #808080;
-          box-shadow: 3px 3px 2px #808080;
+.entrees-plats-desserts .choix-plat .plat .carre {
+  border: solid;
+  border-color: #99e2d0;
+  border-width: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 61px;
+  height: 61px;
+  background-color: #99e2d0;
+  position: absolute;
+  right: -61px;
+  top: 0px;
+}
+
+.entrees-plats-desserts .choix-plat .plat .fa-check {
+  border: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #99e2d0;
+  padding: 5px 5px 5px 5px;
+  margin: 16.5px 16.5px 16.5px 16.5px;
 }
 
 .entrees-plats-desserts .choix-plat .plat .nom-plat {
   border: none #ffd800 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 16px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   margin: 15px 0px 0px 10px;
 }
 
@@ -944,12 +1076,18 @@ header .bandeau-menu .appellation {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .entrees-plats-desserts .choix-plat .plat .information-plat .prix {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: bold;
 }
 
@@ -975,6 +1113,9 @@ header .bandeau-menu .appellation {
           box-shadow: 3px 3px 5px #c5c5c5;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
   text-align: center;
   margin: 15px 95px 60px 95px;
@@ -1026,6 +1167,9 @@ header .bandeau-menu .appellation {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
 }
 
@@ -1033,6 +1177,9 @@ header .bandeau-menu .appellation {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
   margin-left: 25px;
   margin-bottom: 10px;
@@ -1042,6 +1189,9 @@ header .bandeau-menu .appellation {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
+  /* Nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
   color: #ffffff;
   margin-left: 25px;
   margin-bottom: 35px;
@@ -1183,9 +1333,15 @@ header .bandeau-menu .appellation {
   .entrees-plats-desserts .intitule-plat .trait {
     margin-left: 50px;
   }
+  .entrees-plats-desserts .choix {
+    width: 668px;
+  }
   .entrees-plats-desserts .choix-plat {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .entrees-plats-desserts .choix-plat .plat {
+    width: 668px;
   }
   /* Section - Commander */
   .commander .passer-la-commande {
@@ -1356,6 +1512,9 @@ header .bandeau-menu .appellation {
   }
   .entrees-plats-desserts .intitule-plat .trait {
     margin-left: 50px;
+  }
+  .entrees-plats-desserts .choix {
+    width: 380px;
   }
   .entrees-plats-desserts .choix-plat {
     -webkit-box-orient: horizontal;
