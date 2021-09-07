@@ -105,6 +105,32 @@ body {
   }
 }
 
+/* Animation des menus */
+@-webkit-keyframes chargement-menu {
+  0% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes chargement-menu {
+  0% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 /* PARAMETRES GENERAUX */
 /* Reset CSS */
 html,
@@ -866,6 +892,16 @@ header .bandeau-menu .appellation {
   margin: 7px 0px 7px 0px;
   -webkit-box-shadow: 3px 3px 5px #c5c5c5;
           box-shadow: 3px 3px 5px #c5c5c5;
+  -webkit-animation-name: chargement-menu;
+          animation-name: chargement-menu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .entrees-plats-desserts .choix-plat .plat:hover {

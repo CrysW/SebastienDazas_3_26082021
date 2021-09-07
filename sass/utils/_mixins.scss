@@ -249,6 +249,12 @@
       flex-direction: column;
       margin: 7px 0px 7px 0px;
       @include ombre;
+      animation-name: chargement-menu;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+
       &:hover {
         box-shadow: 3px 3px 2px #808080;
       }
