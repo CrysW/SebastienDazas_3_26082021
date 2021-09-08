@@ -311,7 +311,7 @@ p {
 
 /* Main Wrapper */
 #main-wrapper {
-  border: none #000000 1px;
+  border: solid #ffffff 1px;
   width: 375px;
   margin: auto;
 }
@@ -845,6 +845,7 @@ header .bandeau-menu .appellation {
 
 .denomination-restaurant i {
   border: none #0094ff 1px;
+  height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
