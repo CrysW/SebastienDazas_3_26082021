@@ -157,6 +157,6 @@ p {
 
 #main-wrapper {
   border: $main-wrapper-border-display $main-wrapper-border-color 1px;
-  width: 375px;
+  max-width: 100%;
   margin: auto;
 }

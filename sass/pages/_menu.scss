@@ -2,7 +2,7 @@
 
 /* Header */
 
-header {
+.header-menu {
   @include entete-menu;
 }
 
@@ -12,7 +12,7 @@ header {
   border: $border-display $main-carte-menu-border-color 1px;
   border-radius: 30px 30px 0px 0px;
   background-color: $main-carte-menu-background-color;
-  width: 375px;
+  width: 100%;
   position: relative;
   z-index: 2;
   margin: -30px 0px 0px 0px;
@@ -63,8 +63,14 @@ header {
     @include ombre;
     @include formatting_p;
     color: $div-commander-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 15px 95px 60px 95px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 15px 20px 15px 20px;
   }
 }

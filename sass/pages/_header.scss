@@ -7,43 +7,72 @@ header {
 h1 {
   border: $border-display $header-h1-border-color 1px;
   font-size: 30px;
-  margin: 20px 100px 10px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .localisation {
   border: $border-display $header-localisation-border-color 1px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   height: 50px;
   background-color: $header-localisation-background-color;
   i {
     border: $border-display $header-i-border-color 1px;
-    margin: 15px 15px 15px 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
   }
   input {
     border: $border-display $header-input-border-color 1px;
     background-color: $header-input-background-color;
-    width: 165px;
-    margin: 15px 86px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
 .slogan {
   border: $border-display $header-slogan-border-color 1px;
   background-color: $header-slogan-background-color;
+  width: 100%;
   display: flex;
   flex-direction: column;
   h2 {
     border: $border-display $header-h2-border-color 1px;
     @include formatting_h2;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 40px 80px 15px 60px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .principe {
     border: $border-display $header-principe-border-color 1px;
-    @include formatting_p;
+    font-size: 15px;
+    font-weight: normal;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0px 29px 30px 35px;
+    margin-top: 0px;
+    margin-bottom: 29px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .explorer {
     border: $border-display $header-explorer-border-color 0px;
@@ -52,8 +81,14 @@ h1 {
     @include ombre;
     @include formatting_p;
     color: $header-explorer-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0px 83px 55px 82px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 15px 20px 15px 20px;
   }
 }

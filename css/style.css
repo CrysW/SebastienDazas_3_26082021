@@ -20,11 +20,37 @@ body {
 
 .loader {
   position: absolute;
+  z-index: -1000;
+  width: 100%;
+  height: 100%;
+  background: #0b0b0b;
+  opacity: 0;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .loader::after {
   content: "";
   position: absolute;
+  top: 400px;
+  left: 35%;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #9356dc;
+  border-right: 8px solid #ff79da;
+  border-bottom: 8px solid #99edd0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: chargement 800ms linear infinite;
+          animation: chargement 800ms linear infinite;
 }
 
 @-webkit-keyframes fondu {
@@ -312,7 +338,7 @@ p {
 /* Main Wrapper */
 #main-wrapper {
   border: solid #ffffff 1px;
-  width: 375px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -324,7 +350,17 @@ header {
 h1 {
   border: none #ff0000 1px;
   font-size: 30px;
-  margin: 20px 100px 10px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .localisation {
@@ -336,25 +372,49 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 50px;
   background-color: #eaeaea;
 }
 
 .localisation i {
   border: none #0094ff 1px;
-  margin: 15px 15px 15px 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
 }
 
 .localisation input {
   border: none #ff006e 1px;
   background-color: #eaeaea;
-  width: 165px;
-  margin: 15px 86px 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .slogan {
   border: none #ff7fed 1px;
   background-color: #f6f6f6;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,24 +426,44 @@ h1 {
 
 .slogan h2 {
   border: none #ff6a00 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 22px;
   font-weight: bold;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: 40px 80px 15px 60px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .slogan .principe {
   border: none #b6ff00 1px;
   font-size: 15px;
   font-weight: normal;
-  /* Nécessaires pour text-overflow */
-  white-space: nowrap;
-  overflow: hidden;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: 0px 29px 30px 35px;
+  margin-top: 0px;
+  margin-bottom: 29px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .slogan .explorer {
@@ -399,8 +479,20 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: 0px 83px 55px 82px;
+  margin-top: 0px;
+  margin-bottom: 55px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 15px 20px 15px 20px;
 }
 
@@ -431,16 +523,26 @@ main {
 
 .fonctionnement h2 {
   border: none #ff6a00 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 22px;
   font-weight: bold;
-  margin: 50px 194px 5px 20px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-right: 15%;
 }
 
 .information-fonctionnement {
-  border: none #7fffc5 1px;
+  border: none #7fffc5 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,8 +601,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 325px;
+  width: 90%;
   border-radius: 15px 15px 15px 15px;
+  margin-right: 7.5%;
   background-color: #f6f6f6;
   -webkit-box-shadow: 3px 3px 5px #c5c5c5;
           box-shadow: 3px 3px 5px #c5c5c5;
@@ -520,7 +623,10 @@ main {
   width: 25px;
   height: 25px;
   color: #7e7e7e;
-  margin: 25px 25px 20px 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 8%;
 }
 
 .processus .phase h3 {
@@ -530,7 +636,20 @@ main {
   /* Nécessaires pour text-overflow */
   white-space: nowrap;
   overflow: hidden;
-  margin: 25px 0px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-overflow: ellipsis;
 }
 
 .processus .phase:hover {
@@ -556,12 +675,22 @@ main {
 
 .restaurant h2 {
   border: none #ff6a00 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 22px;
   font-weight: bold;
-  margin: 55px 246px 5px 20px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-right: 6.5%;
 }
 
 .choix-restaurant {
@@ -577,6 +706,7 @@ main {
 }
 
 .information-restaurant {
+  position: relative;
   border: none #4800ff 1px;
   border-radius: 15px 15px 15px 15px;
   background-color: #ffffff;
@@ -587,8 +717,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 335px;
-  margin: 20px 20px 0px 20px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 5.5%;
+  margin-right: 5.5%;
   -webkit-box-shadow: 3px 3px 5px #c5c5c5;
           box-shadow: 3px 3px 5px #c5c5c5;
 }
@@ -608,13 +741,14 @@ main {
   padding: 10px 15px 10px 15px;
   position: absolute;
   z-index: 2;
-  margin: 10px 0px 0px 245px;
+  top: 10px;
+  right: 10px;
 }
 
 .information-restaurant img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 335px;
+  width: 100%;
   height: 175px;
 }
 
@@ -702,7 +836,21 @@ footer h4 {
   width: fit-content;
   font-size: 16px;
   color: #ffffff;
-  margin: 25px 263px 20px 25px;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  top: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 7%;
 }
 
 footer p {
@@ -723,8 +871,8 @@ footer .notion-juridique {
   white-space: nowrap;
   overflow: hidden;
   color: #ffffff;
-  margin-left: 25px;
   margin-bottom: 10px;
+  margin-left: 7%;
 }
 
 footer .contacter {
@@ -735,8 +883,8 @@ footer .contacter {
   white-space: nowrap;
   overflow: hidden;
   color: #ffffff;
-  margin-left: 25px;
   margin-bottom: 35px;
+  margin-left: 7%;
 }
 
 footer .prestation {
@@ -748,8 +896,8 @@ footer .prestation {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 25px;
   margin-bottom: 5px;
+  margin-left: 7%;
 }
 
 footer .prestation i {
@@ -762,31 +910,28 @@ footer .prestation i {
 
 /* Menu - Restaurant */
 /* Header */
-header {
+.header-menu {
   border: none #007f46 1px;
 }
 
-header img {
+.header-menu img {
   border: none #ff00dc 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 375px;
+  width: 100%;
   height: 250px;
 }
 
-header .bandeau-menu {
+.header-menu .bandeau-menu {
   border: none #ffb27f 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
-header .bandeau-menu i {
+.header-menu .bandeau-menu i {
   border: none #0094ff 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,12 +946,13 @@ header .bandeau-menu i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25px 0px 20px 20px;
+  position: absolute;
+  top: 20px;
+  left: 16px;
 }
 
-header .bandeau-menu .appellation {
+.header-menu .bandeau-menu .appellation {
   border: none #ff0000 1px;
-  margin: 20px 106px 10px 73px;
 }
 
 /* Main */
@@ -814,7 +960,7 @@ header .bandeau-menu .appellation {
   border: none #f6f6f6 1px;
   border-radius: 30px 30px 0px 0px;
   background-color: #f6f6f6;
-  width: 375px;
+  width: 100%;
   position: relative;
   z-index: 2;
   margin: -30px 0px 0px 0px;
@@ -902,7 +1048,7 @@ header .bandeau-menu .appellation {
   border: none #ff45ab 0px;
   border-radius: 15px 15px 15px 15px;
   background-color: #ffffff;
-  width: 345px;
+  width: 100%;
   height: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -985,7 +1131,7 @@ header .bandeau-menu .appellation {
 .entrees-plats-desserts .choix-plat .plat {
   border: none #ff006e 1px;
   border-radius: 15px 15px 15px 15px;
-  width: 345px;
+  width: 100%;
   height: 61px;
   position: relative;
   display: -webkit-box;
@@ -1092,8 +1238,20 @@ header .bandeau-menu .appellation {
   white-space: nowrap;
   overflow: hidden;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: 15px 95px 60px 95px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 15px 20px 15px 20px;
 }
 
@@ -1135,7 +1293,21 @@ header .bandeau-menu .appellation {
   width: fit-content;
   font-size: 16px;
   color: #ffffff;
-  margin: 25px 263px 20px 25px;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  top: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 7%;
 }
 
 .footer-menu p {
@@ -1156,8 +1328,8 @@ header .bandeau-menu .appellation {
   white-space: nowrap;
   overflow: hidden;
   color: #ffffff;
-  margin-left: 25px;
   margin-bottom: 10px;
+  margin-left: 7%;
 }
 
 .footer-menu .contacter {
@@ -1168,8 +1340,8 @@ header .bandeau-menu .appellation {
   white-space: nowrap;
   overflow: hidden;
   color: #ffffff;
-  margin-left: 25px;
   margin-bottom: 35px;
+  margin-left: 7%;
 }
 
 .footer-menu .prestation {
@@ -1181,8 +1353,8 @@ header .bandeau-menu .appellation {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 25px;
   margin-bottom: 5px;
+  margin-left: 7%;
 }
 
 .footer-menu .prestation i {
@@ -1198,154 +1370,86 @@ header .bandeau-menu .appellation {
   /* PARAMETRES GENERAUX */
   /* Main Wrapper*/
   #main-wrapper {
-    width: 768px;
+    max-width: 768px;
+  }
+  /* Animation du loading spinner*/
+  .loader::after {
+    left: 40%;
   }
   /* Header */
   h1 {
     font-size: 35px;
-    margin-left: 290px;
-    margin-right: 290px;
-  }
-  .localisation i {
-    margin-left: 284px;
-  }
-  .localisation input {
-    margin-right: 288px;
-  }
-  .slogan h2 {
-    margin-left: 206px;
-    margin-right: 207px;
-  }
-  .slogan .principe {
-    margin-left: 161px;
-    margin-right: 162px;
   }
   .slogan .explorer {
-    margin-left: 279px;
-    margin-right: 279px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
   /* Section - Fonctionnement */
-  .fonctionnement h2 {
-    margin-left: 50px;
-    margin-right: 555px;
-  }
-  .information-fonctionnement {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
   .processus {
-    margin-right: 158px;
-    margin-left: 158px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   /* Section - Restaurant */
   .restaurant h2 {
-    margin-left: 50px;
-    margin-right: 608px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .information-restaurant {
-    width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .information-restaurant .nouveau {
-    margin-left: 579px;
+    margin-left: 73%;
   }
   .information-restaurant img {
-    width: 668px;
-    height: 350px;
+    height: 200px;
   }
   /* Footer */
-  footer .infos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   footer h4 {
-    margin-left: 50px;
-    margin-right: 630px;
+    margin-left: 6%;
   }
   footer .prestation {
-    margin-left: 50px;
+    margin-left: 6%;
   }
   footer .notion-juridique {
-    margin-left: 50px;
+    margin-left: 6%;
   }
   footer .contacter {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 6%;
   }
   /* Menu - Restaurant */
   /* Header - Menu */
   .header-menu img {
-    width: 768px;
     height: 300px;
-  }
-  .header-menu .bandeau-menu i {
-    margin-left: 50px;
-  }
-  .header-menu .bandeau-menu .appellation {
-    margin-left: 226px;
-    margin-right: 289px;
   }
   /* Main - Menu */
   .carte-menu {
-    width: 768px;
-  }
-  .denomination-restaurant .designation {
-    margin-left: 50px;
-  }
-  .denomination-restaurant i {
-    margin-right: 65px;
+    width: 100%;
   }
   /* Section - Entrée Plats Desserts */
-  .entrees-plats-desserts .intitule-plat .alimentation {
-    margin-left: 50px;
-  }
-  .entrees-plats-desserts .intitule-plat .trait {
-    margin-left: 50px;
-  }
   .entrees-plats-desserts .choix {
-    width: 668px;
-  }
-  .entrees-plats-desserts .choix-plat {
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
   }
   .entrees-plats-desserts .choix-plat .plat {
-    width: 668px;
+    width: 100%;
   }
   /* Section - Commander */
   .commander .passer-la-commande {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
   /* Footer - Menu */
-  .footer-menu .infos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  footer h4 {
+    margin-left: 6%;
   }
-  .footer-menu h4 {
-    margin-left: 50px;
-    margin-right: 630px;
+  footer .prestation {
+    margin-left: 6%;
   }
-  .footer-menu .prestation {
-    margin-left: 50px;
+  footer .notion-juridique {
+    margin-left: 6%;
   }
-  .footer-menu .notion-juridique {
-    margin-left: 50px;
-  }
-  .footer-menu .contacter {
-    margin-left: 50px;
-    margin-right: 50px;
+  footer .contacter {
+    margin-left: 6%;
   }
 }
 
@@ -1354,84 +1458,29 @@ header .bandeau-menu .appellation {
   /* PARAMETRES GENERAUX */
   /* Main Wrapper*/
   #main-wrapper {
-    width: 1400px;
+    max-width: 1400px;
   }
   /* Animation du loading spinner*/
-  .loader {
-    z-index: -1000;
-    width: 100%;
-    height: 100%;
-    background: #0b0b0b;
-    opacity: 0;
-    -webkit-animation-name: fondu;
-            animation-name: fondu;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-  }
   .loader::after {
-    top: 772px;
-    left: 642px;
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #9356dc;
-    border-right: 8px solid #ff79da;
-    border-bottom: 8px solid #99edd0;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: chargement 800ms linear infinite;
-            animation: chargement 800ms linear infinite;
+    left: 46%;
   }
   /* Header */
   h1 {
     font-size: 40px;
-    margin-left: 592px;
-    margin-right: 592px;
-  }
-  .localisation i {
-    margin-left: 586px;
-  }
-  .localisation input {
-    margin-right: 618px;
-  }
-  .slogan h2 {
-    margin-left: 522px;
-    margin-right: 523px;
-  }
-  .slogan .principe {
-    margin-left: 477px;
-    margin-right: 478px;
   }
   .slogan .explorer {
-    margin-left: 595px;
-    margin-right: 595px;
+    margin-left: 35%;
+    margin-right: 35%;
   }
   /* Section - Fonctionnement */
-  .fonctionnement h2 {
-    margin-left: 50px;
-    margin-right: 1189px;
-  }
-  .information-fonctionnement {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 50px;
+  .processus {
+    margin-right: 25%;
+    margin-left: 25%;
   }
   /* Section - Restaurant */
   .restaurant h2 {
-    margin-bottom: 15px;
-    margin-left: 50px;
-    margin-right: 1241px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .choix-restaurant {
     -webkit-box-orient: horizontal;
@@ -1440,71 +1489,37 @@ header .bandeau-menu .appellation {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-bottom: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .information-restaurant {
-    width: 625px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .information-restaurant .nouveau {
-    margin-left: 535px;
+    width: 35%;
   }
   .information-restaurant img {
-    width: 625px;
-    height: 332px;
+    height: 300px;
   }
   /* Footer */
-  footer .infos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   footer h4 {
-    margin-left: 50px;
-    margin-right: 1263px;
+    margin-left: 5%;
   }
   footer .prestation {
-    margin-left: 50px;
+    margin-left: 5%;
   }
   footer .notion-juridique {
-    margin-left: 50px;
+    margin-left: 5%;
   }
   footer .contacter {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
   }
   /* Menu - Restaurant */
   /* Header - Menu */
   .header-menu img {
-    width: 1400px;
     height: 300px;
-  }
-  .header-menu .bandeau-menu i {
-    margin-left: 50px;
-  }
-  .header-menu .bandeau-menu .appellation {
-    margin-left: 528px;
-    margin-right: 592px;
   }
   /* Main - Menu */
   .carte-menu {
-    width: 1400px;
-  }
-  .denomination-restaurant .designation {
-    margin-left: 50px;
-  }
-  .denomination-restaurant i {
-    margin-right: 65px;
+    max-width: 1400px;
   }
   /* Section - Entrée Plats Desserts */
   .entrees-plats-desserts {
@@ -1513,60 +1528,30 @@ header .bandeau-menu .appellation {
   .entrees-plats-desserts .intitule-plat {
     margin-bottom: 10px;
   }
-  .entrees-plats-desserts .intitule-plat .alimentation {
-    margin-left: 50px;
-  }
-  .entrees-plats-desserts .intitule-plat .trait {
-    margin-left: 50px;
-  }
   .entrees-plats-desserts .choix {
-    width: 380px;
-  }
-  .entrees-plats-desserts .choix-plat {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
   }
   .entrees-plats-desserts .choix-plat .plat {
-    width: 380px;
+    width: 100%;
   }
   /* Section - Commander */
   .commander .passer-la-commande {
     margin-top: 45px;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
-  /* Footer */
-  .footer-menu .infos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  /* Footer - Menu */
+  footer h4 {
+    margin-left: 6%;
   }
-  .footer-menu h4 {
-    margin-left: 50px;
-    margin-right: 1263px;
+  footer .prestation {
+    margin-left: 6%;
   }
-  .footer-menu .prestation {
-    margin-left: 50px;
+  footer .notion-juridique {
+    margin-left: 6%;
   }
-  .footer-menu .notion-juridique {
-    margin-left: 50px;
-  }
-  .footer-menu .contacter {
-    margin-left: 50px;
-    margin-right: 50px;
+  footer .contacter {
+    margin-left: 6%;
   }
 }
 /*# sourceMappingURL=style.css.map */

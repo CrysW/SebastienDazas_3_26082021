@@ -6,102 +6,69 @@
   /* Main Wrapper*/
 
   #main-wrapper {
-    width: 768px;
+    max-width: 768px;
+  }
+
+  /* Animation du loading spinner*/
+
+  .loader::after {
+    left: 40%;
   }
 
   /* Header */
 
   h1 {
     font-size: 35px;
-    margin-left: 290px;
-    margin-right: 290px;
-  }
-
-  .localisation {
-    i {
-      margin-left: 284px;
-    }
-    input {
-      margin-right: 288px;
-    }
   }
 
   .slogan {
-    h2 {
-      margin-left: 206px;
-      margin-right: 207px;
-    }
-    .principe {
-      margin-left: 161px;
-      margin-right: 162px;
-    }
     .explorer {
-      margin-left: 279px;
-      margin-right: 279px;
+      margin-left: 25%;
+      margin-right: 25%;
     }
   }
 
   /* Section - Fonctionnement */
 
-  .fonctionnement {
-    h2 {
-      margin-left: 50px;
-      margin-right: 555px;
-    }
-  }
-
-  .information-fonctionnement {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
   .processus {
-    margin-right: 158px;
-    margin-left: 158px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   /* Section - Restaurant */
 
   .restaurant {
     h2 {
-      margin-left: 50px;
-      margin-right: 608px;
+      margin-left: 5%;
+      margin-right: 5%;
     }
   }
 
   .information-restaurant {
-    width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
     .nouveau {
-      margin-left: 579px;
+      margin-left: 73%;
     }
     img {
-      width: 668px;
-      height: 350px;
+      height: 200px;
     }
   }
 
   /* Footer */
 
   footer {
-    .infos {
-      flex-direction: row;
-      justify-content: space-between;
-    }
     h4 {
-      margin-left: 50px;
-      margin-right: 630px;
+      margin-left: 6%;
     }
     .prestation {
-      margin-left: 50px;
+      margin-left: 6%;
     }
     .notion-juridique {
-      margin-left: 50px;
+      margin-left: 6%;
     }
     .contacter {
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 6%;
     }
   }
 
@@ -111,56 +78,26 @@
 
   .header-menu {
     img {
-      width: 768px;
       height: 300px;
-    }
-
-    .bandeau-menu {
-      i {
-        margin-left: 50px;
-      }
-      .appellation {
-        margin-left: 226px;
-        margin-right: 289px;
-      }
     }
   }
 
   /* Main - Menu */
 
   .carte-menu {
-    width: 768px;
-  }
-  .denomination-restaurant {
-    .designation {
-      margin-left: 50px;
-    }
-    i {
-      margin-right: 65px;
-    }
+    width: 100%;
   }
 
   /* Section - Entrée Plats Desserts */
 
   .entrees-plats-desserts {
-    .intitule-plat {
-      .alimentation {
-        margin-left: 50px;
-      }
-      .trait {
-        margin-left: 50px;
-      }
-    }
-
     .choix {
-      width: 668px;
+      width: 100%;
     }
 
     .choix-plat {
-      margin-left: 50px;
-      margin-right: 50px;
       .plat {
-        width: 668px;
+        width: 100%;
       }
     }
   }
@@ -169,31 +106,25 @@
 
   .commander {
     .passer-la-commande {
-      margin-left: 250px;
-      margin-right: 250px;
+      margin-left: 25%;
+      margin-right: 25%;
     }
   }
 
   /* Footer - Menu */
 
-  .footer-menu {
-    .infos {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  footer {
     h4 {
-      margin-left: 50px;
-      margin-right: 630px;
+      margin-left: 6%;
     }
     .prestation {
-      margin-left: 50px;
+      margin-left: 6%;
     }
     .notion-juridique {
-      margin-left: 50px;
+      margin-left: 6%;
     }
     .contacter {
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 6%;
     }
   }
 }

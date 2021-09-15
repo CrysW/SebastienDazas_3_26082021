@@ -6,137 +6,71 @@
   /* Main Wrapper*/
 
   #main-wrapper {
-    width: 1400px;
+    max-width: 1400px;
   }
 
   /* Animation du loading spinner*/
 
-  .loader {
-    z-index: -1000;
-    width: 100%;
-    height: 100%;
-    background: #0b0b0b;
-    opacity: 0;
-    animation-name: fondu;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-  }
-
   .loader::after {
-    top: 772px;
-    left: 642px;
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #9356dc;
-    border-right: 8px solid #ff79da;
-    border-bottom: 8px solid #99edd0;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: chargement 800ms linear infinite;
+    left: 46%;
   }
 
   /* Header */
 
   h1 {
     font-size: 40px;
-    margin-left: 592px;
-    margin-right: 592px;
-  }
-
-  .localisation {
-    i {
-      margin-left: 586px;
-    }
-    input {
-      margin-right: 618px;
-    }
   }
 
   .slogan {
-    h2 {
-      margin-left: 522px;
-      margin-right: 523px;
-    }
-    .principe {
-      margin-left: 477px;
-      margin-right: 478px;
-    }
     .explorer {
-      margin-left: 595px;
-      margin-right: 595px;
+      margin-left: 35%;
+      margin-right: 35%;
     }
   }
 
   /* Section - Fonctionnement */
 
-  .fonctionnement {
-    h2 {
-      margin-left: 50px;
-      margin-right: 1189px;
-    }
-  }
-
-  .information-fonctionnement {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 50px;
+  .processus {
+    margin-right: 25%;
+    margin-left: 25%;
   }
 
   /* Section - Restaurant */
 
   .restaurant {
     h2 {
-      margin-bottom: 15px;
-      margin-left: 50px;
-      margin-right: 1241px;
+      margin-left: 5%;
+      margin-right: 5%;
     }
   }
 
   .choix-restaurant {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
+    justify-content: center;
   }
 
   .information-restaurant {
-    width: 625px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    .nouveau {
-      margin-left: 535px;
-    }
+    width: 35%;
     img {
-      width: 625px;
-      height: 332px;
+      height: 300px;
     }
   }
 
   /* Footer */
 
   footer {
-    .infos {
-      flex-direction: row;
-      justify-content: space-between;
-    }
     h4 {
-      margin-left: 50px;
-      margin-right: 1263px;
+      margin-left: 5%;
     }
     .prestation {
-      margin-left: 50px;
+      margin-left: 5%;
     }
     .notion-juridique {
-      margin-left: 50px;
+      margin-left: 5%;
     }
     .contacter {
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 5%;
     }
   }
 
@@ -146,32 +80,13 @@
 
   .header-menu {
     img {
-      width: 1400px;
       height: 300px;
-    }
-
-    .bandeau-menu {
-      i {
-        margin-left: 50px;
-      }
-      .appellation {
-        margin-left: 528px;
-        margin-right: 592px;
-      }
     }
   }
   /* Main - Menu */
 
   .carte-menu {
-    width: 1400px;
-  }
-  .denomination-restaurant {
-    .designation {
-      margin-left: 50px;
-    }
-    i {
-      margin-right: 65px;
-    }
+    max-width: 1400px;
   }
 
   /* Section - Entrée Plats Desserts */
@@ -180,26 +95,15 @@
     margin-bottom: 30px;
     .intitule-plat {
       margin-bottom: 10px;
-      .alimentation {
-        margin-left: 50px;
-      }
-      .trait {
-        margin-left: 50px;
-      }
     }
 
     .choix {
-      width: 380px;
+      width: 100%;
     }
 
     .choix-plat {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 50px;
-      margin-right: 50px;
       .plat {
-        width: 380px;
+        width: 100%;
       }
     }
   }
@@ -209,31 +113,25 @@
   .commander {
     .passer-la-commande {
       margin-top: 45px;
-      margin-left: 600px;
-      margin-right: 600px;
+      margin-left: 25%;
+      margin-right: 25%;
     }
   }
 
-  /* Footer */
+  /* Footer - Menu */
 
-  .footer-menu {
-    .infos {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  footer {
     h4 {
-      margin-left: 50px;
-      margin-right: 1263px;
+      margin-left: 6%;
     }
     .prestation {
-      margin-left: 50px;
+      margin-left: 6%;
     }
     .notion-juridique {
-      margin-left: 50px;
+      margin-left: 6%;
     }
     .contacter {
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 6%;
     }
   }
 }
